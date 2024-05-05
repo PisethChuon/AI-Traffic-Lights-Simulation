@@ -5,7 +5,7 @@ from ReinforcementLearning import q_learning
 from Search import search
 
 if __name__ == '__main__':
-    parser = ArgumentParser(description="AI Traffic Lights Controller")
+    parser = ArgumentParser(description="Traffic lights schedule")
     methods = ['fc', 'lqf', 'qlearning', 'search']
     parser.add_argument("-m", "--method", choices=methods, required=True)
     parser.add_argument("-e", "--episodes", metavar='N', type=int, required=True,
